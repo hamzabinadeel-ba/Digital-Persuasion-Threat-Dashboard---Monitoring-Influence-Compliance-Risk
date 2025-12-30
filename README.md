@@ -39,7 +39,7 @@ This dashboard makes them measurable, comparable and actionable.
   - Non-malicious (171)
 
 # Methodology
-## 1. Data Preparation
+## Data Preparation
 
 - Resolved structural data issues (labels embedded in text)
 
@@ -51,132 +51,93 @@ This dashboard makes them measurable, comparable and actionable.
   - Binary urgency flags
   - Unigram and bigram frequencies
 
-## 2. Exploratory Data Analysis (EDA)
+## Exploratory Data Analysis (EDA)
 
-Message Length (Structural Persuasion)
+- Message Length (Structural Persuasion)
+- Phishing: 80.5 words, max 519, SD 140.7
+- Scareware: 14.2 words, very low variance
+- Baiting & Malware: 16-24 words
+- Non-malicious: 23.7 words
 
-Phishing: 평균 80.5 words, max 519, SD 140.7
+**Phishing messages are 3.4× longer than non-malicious messages, indicating legitimacy-building narratives.**
 
-Scareware: 평균 14.2 words, very low variance
-
-Baiting & Malware: 평균 16–24 words
-
-Non-malicious: 평균 23.7 words
-
-➡️ Phishing messages are ~3.4× longer than non-malicious messages, indicating legitimacy-building narratives.
-
-Urgency Cue Analysis (Psychological Pressure)
+## Urgency Cue Analysis (Psychological Pressure)
 Percentage of messages containing urgency cues:
 
-Phishing: 42.98%
+- Phishing: 42.98%
+- Pretexting: 37.18%
+- Non-malicious: 18.13%
+- Scareware: 13%
+- Malware: 8.97%
+- Baiting: 2.5%
 
-Pretexting: 37.18%
+**Phishing shows the highest frequency and diversity of urgency cues.**
 
-Non-malicious: 18.13%
+## Lexical & Narrative Patterns
 
-Scareware: 13%
+- **Phishing:** “account”, “verify”, “click”, “reset”
+- **Scareware:** “download”, “infected”, “attachment”
+- **Baiting:** “free”, “offer”, “exclusive”
+- **Pretexting:** “customer”, “password”, “service”
+- **Non-malicious:** conversational phrases (“best regards”, “let know”)
 
-Malware: 8.97%
+**Distinct unigram and bigram signatures confirm differentiated persuasion strategies.**
 
-Baiting: 2.5%
+# Interactive Dashboard
+## Tools
 
-➡️ Phishing shows the highest frequency and diversity of urgency cues.
+- Python Dash used for application framework
+- Plotly used for interactive charts
+- Bootstrap used for responsive layout
 
-Lexical & Narrative Patterns
+## Visual Components (3 Interconnected Views)
 
-Phishing: “account”, “verify”, “click”, “reset”
+- **Visual 1: Message Length Comparison:** Quantifies narrative complexity across threat types.
+- **Visual 2: Urgency Cue Frequency:** Displays proportion of messages with time-pressure language.
+- **Visual 3: Lexical Risk Signatures:** Unigram word cloud + top bigram metric cards.
 
-Scareware: “download”, “infected”, “attachment”
+## Interactivity
 
-Baiting: “free”, “offer”, “exclusive”
+- Click-driven cross-filtering
+- Global threat-category dropdown
+- Pre-aggregated metrics for real-time responsiveness
 
-Pretexting: “customer”, “password”, “service”
-
-Non-malicious: conversational phrases (“best regards”, “let know”)
-
-Distinct unigram and bigram signatures confirm differentiated persuasion strategies.
-
-Interactive Dashboard
-Tools
-
-Python Dash – application framework
-
-Plotly – interactive charts
-
-Bootstrap – responsive layout
-
-Visual Components (3 Interconnected Views)
-
-Message Length Comparison
-Quantifies narrative complexity across threat types.
-
-Urgency Cue Frequency
-Displays proportion of messages with time-pressure language.
-
-Lexical Risk Signatures
-Unigram word cloud + top bigram metric cards.
-
-Interactivity
-
-Click-driven cross-filtering
-
-Global threat-category dropdown
-
-Pre-aggregated metrics for real-time responsiveness
-
-AI Governance & Critical Evaluation
+# AI Governance and Critical Evaluation
 
 Generative AI was used responsibly and transparently:
 
-Gemini: Ideation and exploratory hypotheses
-
-ChatGPT: Coding scaffolding for Dash
+- **Gemini:** Ideation and exploratory hypotheses
+- **ChatGPT:** Coding scaffolding for Dash
 
 All AI outputs were:
-
-Treated as hypotheses, not facts
-
-Quantitatively validated against EDA results
-
-Corrected where numerical hallucinations occurred
+- Treated as hypotheses, not facts
+- Quantitatively validated against EDA results
+- Corrected where numerical hallucinations occurred
 
 This project demonstrates human-in-the-loop analytics, not AI dependency.
 
-Key Quantitative Insights
+# Key Quantitative Insights
 
-Phishing messages are longer, more variable, and urgency-heavy
+- Phishing messages are longer, more variable and urgency-heavy
+- Urgency appears in 43% of phishing vs 18% of non-malicious messages
+- Each threat category has distinct lexical persuasion fingerprints
+- Structural and linguistic cues can be measured before user compromise
 
-Urgency appears in ~43% of phishing vs ~18% of non-malicious messages
+# Skills Demonstrated
 
-Each threat category has distinct lexical persuasion fingerprints
+- Exploratory data analysis (EDA)
+- NLP feature engineering (interpretable methods)
+- Interactive dashboard development
+- Quantitative persuasion analysis
+- Ethical and critical AI evaluation
+- Executive-level data storytelling
 
-Structural and linguistic cues can be measured before user compromise
+# Intended Audience
 
-Skills Demonstrated
+- Analytics and data science roles
+- Cybersecurity and risk teams
+- Consulting and advisory positions
+- Organisations monitoring digital persuasion threats
 
-Exploratory data analysis (EDA)
-
-NLP feature engineering (interpretable methods)
-
-Interactive dashboard development
-
-Quantitative persuasion analysis
-
-Ethical and critical AI evaluation
-
-Executive-level data storytelling
-
-Intended Audience
-
-Analytics & data science roles
-
-Cybersecurity and risk teams
-
-Consulting and advisory positions
-
-Organisations monitoring digital persuasion threats
-
-Key Takeaway
-
-Cybersecurity risk is behavioural as much as technical.
-This project shows how quantitative NLP and visual analytics can expose hidden persuasion mechanisms and support ethical, data-driven cyber-risk decisions.
+# Key Takeaway
+Cybersecurity risk is behavioural as much as technical. This project shows how quantitative NLP and visual analytics can expose hidden persuasion mechanisms and support ethical, data-driven cyber-risk decisions.
