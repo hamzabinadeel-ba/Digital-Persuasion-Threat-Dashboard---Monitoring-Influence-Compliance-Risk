@@ -1,0 +1,2 @@
+# Digital-Persuasion-Threat-Dashboard---Monitoring-Influence-Compliance-Risk
+An exploratory NLP and visual analytics project analysing phishing and social engineering messages. Using Python and Dash, the project examines message length, urgency cues and lexical patterns across threat types, critiques AI-generated insights and delivers an interactive dashboard to support cyber-risk monitoring and executive decision-making.
