@@ -1,7 +1,9 @@
-# Digital-Persuasion-Threat-Dashboard: Monitoring-Influence-Compliance-Risk
+# Digital Persuasion Threat Dashboard: Monitoring Influence Compliance Risk
+
 An exploratory NLP and visual analytics project analysing phishing and social engineering messages. Using Python and Dash, the project examines message length, urgency cues and lexical patterns across threat types, critiques AI-generated insights and delivers an interactive dashboard to support cyber-risk monitoring and executive decision-making.
 
 # Project Overview
+
 This project applies exploratory data analysis (EDA), natural language processing (NLP) and interactive visualisation to analyse 621 real-world text messages across 6 categories (phishing, malware, scareware, baiting, pretexting, non-malicious). Using Python and Dash, the project quantifies message length, urgency cues and lexical patterns to surface behavioural risk signals and deliver an executive-facing dashboard for ethical cyber-risk monitoring.
 
 # Business and Analytical Context
@@ -9,44 +11,31 @@ This project applies exploratory data analysis (EDA), natural language processin
 Modern cyber threats rely on psychological persuasion, not just technical exploits. This project focuses on how malicious messages influence users through:
 
 - Narrative complexity
-
 - Time pressure and urgency
-
 - Repeated lexical manipulation patterns
-
 - Senior decision-makers rarely see these signals quantified.
 
 This dashboard makes them measurable, comparable and actionable.
 
 # Dataset
 
-- **Source:** Zenodo – Multiclass NLP Dataset for Phishing & Social Engineering
-
+- **Source:** Zenodo – Multiclass NLP Dataset for Phishing and Social Engineering
 - **Total messages analysed:** 621 (from 624 raw records after cleaning)
-
 - **Threat categories (6):**
-
   - Phishing (114)
-
   - Scareware (100)
-
   - Baiting (80)
-
   - Malware (78)
-
   - Pretexting (78)
-
   - Non-malicious (171)
 
 # Methodology
+
 ## Data Preparation
 
 - Resolved structural data issues (labels embedded in text)
-
 - Parsed and cleaned messages using Python (pandas, regex)
-
 - Engineered interpretable NLP features:
-
   - Word count per message
   - Binary urgency flags
   - Unigram and bigram frequencies
@@ -56,12 +45,13 @@ This dashboard makes them measurable, comparable and actionable.
 - Message Length (Structural Persuasion)
 - Phishing: 80.5 words, max 519, SD 140.7
 - Scareware: 14.2 words, very low variance
-- Baiting & Malware: 16-24 words
+- Baiting and Malware: 16-24 words
 - Non-malicious: 23.7 words
 
 **Phishing messages are 3.4× longer than non-malicious messages, indicating legitimacy-building narratives.**
 
 ## Urgency Cue Analysis (Psychological Pressure)
+
 Percentage of messages containing urgency cues:
 
 - Phishing: 42.98%
@@ -73,7 +63,7 @@ Percentage of messages containing urgency cues:
 
 **Phishing shows the highest frequency and diversity of urgency cues.**
 
-## Lexical & Narrative Patterns
+## Lexical and Narrative Patterns
 
 - **Phishing:** “account”, “verify”, “click”, “reset”
 - **Scareware:** “download”, “infected”, “attachment”
@@ -84,6 +74,7 @@ Percentage of messages containing urgency cues:
 **Distinct unigram and bigram signatures confirm differentiated persuasion strategies.**
 
 # Interactive Dashboard
+
 ## Tools
 
 - Python Dash used for application framework
@@ -140,4 +131,5 @@ This project demonstrates human-in-the-loop analytics, not AI dependency.
 - Organisations monitoring digital persuasion threats
 
 # Key Takeaway
+
 Cybersecurity risk is behavioural as much as technical. This project shows how quantitative NLP and visual analytics can expose hidden persuasion mechanisms and support ethical, data-driven cyber-risk decisions.
